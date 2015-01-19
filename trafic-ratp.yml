@@ -1,0 +1,16 @@
+urlRatp: http://www.ratp.fr/horaires/fr/ratp/metro/prochains_passages/PP
+
+# Logging settings.
+logging:
+
+  # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+  level: INFO
+
+  # Logger-specific levels.
+  loggers:
+
+    # Sets the level for 'com.example.app' to DEBUG.
+    fr.inovia.blog: DEBUG
+
+  appenders:
+    - type: console
