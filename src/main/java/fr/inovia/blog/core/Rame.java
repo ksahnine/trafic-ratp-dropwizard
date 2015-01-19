@@ -3,15 +3,15 @@ package fr.inovia.blog.core;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.Length;
 
-public class Passage {
+public class Rame {
     private String direction;
 
     private String attente;
 
-    public Passage() {
+    public Rame() {
     }
 
-    public Passage(String direction, String attente) {
+    public Rame(String direction, String attente) {
         this.direction = direction;
         this.attente = attente;
     }
@@ -23,6 +23,6 @@ public class Passage {
 
     @JsonProperty
     public String getAttente() {
-        return attente;
+        return attente; 
     }
 }
