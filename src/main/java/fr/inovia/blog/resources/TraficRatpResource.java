@@ -1,6 +1,6 @@
 package fr.inovia.blog.resources;
 
-import fr.inovia.blog.core.Passage;
+import fr.inovia.blog.core.Rame;
 import com.google.common.base.Optional;
 import com.codahale.metrics.annotation.Timed;
 
@@ -35,10 +35,10 @@ public class TraficRatpResource {
     @GET
     @Timed
     @Path("/metro/{ligne: [0-9]{1,2}[b]{0,1}}/{station}/{sens: [A|R]}")
-    public ArrayList<Passage> metro(@PathParam("ligne") String ligne, 
+    public ArrayList<Rame> metro(@PathParam("ligne") String ligne, 
                                     @PathParam("station") String station, 
                                     @PathParam("sens") String sens) throws IOException {
-        ArrayList<Passage> prochainsPassages = new ArrayList<Passage>();
+        ArrayList<Rame> prochainsPassages = new ArrayList<Rame>();
         // web scraping
         String url = urlRatp + "/" + station + "/" + ligne + "/" + sens;
         Document doc = Jsoup.connect(url).get();
@@ -52,7 +52,7 @@ public class TraficRatpResource {
             String direction = e.child(0).text();
             String attente = e.child(1).text();
             System.out.println(direction + " " + attente);
-            prochainsPassages.add( new Passage(direction, attente) );
+            prochainsPassages.add( new Rame(direction, attente) );
         }
 
         return prochainsPassages;
