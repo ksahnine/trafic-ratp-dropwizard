@@ -3,11 +3,11 @@ Un cas d'utilisation de <a href="http://dropwizard.io/">Dropwizard</a> illustran
 
 ## Utilisation
 Construction du livrable :
-`
+```
 git clone https://github.com/ksahnine/trafic-ratp-dropwizard.git
 cd trafic-ratp-dropwizard
 mvn package
-`
+```
 Démarrage du service :
     java -jar target/trafic-ratp-1.0.0-SNAPSHOT.jar server trafic-ratp.yml
 Exemple d'utilisation :
