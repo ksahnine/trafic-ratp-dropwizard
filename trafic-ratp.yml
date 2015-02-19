@@ -1,4 +1,6 @@
 urlRatp: http://www.ratp.fr/horaires/fr/ratp/metro/prochains_passages/PP
+urlLignes: http://www.ratp.fr/meteo/
+urlStations: http://www.ratp.fr/horaires/fr/ratp/metro
 
 # Logging settings.
 logging:
