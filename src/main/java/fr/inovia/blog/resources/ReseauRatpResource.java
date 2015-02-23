@@ -66,7 +66,7 @@ public class ReseauRatpResource {
             String id = e.attr("id");
             String numero = id.substring(id.lastIndexOf('_') + 1);
             Elements e_c = e.children();
-            String iconUrl = e_c.get(0).attr("src"); // URL icone
+            String iconUrl = "http://www.ratp.fr" + e_c.get(0).attr("src"); // URL icone
             String etat = e_c.select("span.perturb_message").get(0).text(); // Etat trafic
             lignesMetro.add(new Ligne(id, numero, iconUrl, etat));
         }
