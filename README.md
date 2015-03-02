@@ -21,3 +21,11 @@ curl -s http://localhost:8080/trafic-ratp/metro/14/pyramides/A
 ```
 curl -s http://localhost:8080/trafic-ratp/metro/14/pyramides/R
 ```
+ - Liste des lignes du réseau
+```
+curl -s http://localhost:8080/trafic-ratp/reseau-ratp/metro/lignes
+```
+ - Liste des stations de métro du réseau
+```
+curl -s http://localhost:8080/trafic-ratp/reseau-ratp/metro/stations
+```
