@@ -12,7 +12,7 @@ Démarrage du service :
 ```
 java -jar target/trafic-ratp-1.0.0-SNAPSHOT.jar server trafic-ratp.yml
 ```
-Exemple d'utilisation :
+Exemples d'utilisation :
  - Prochains passages métro : Ligne 14 / Station <i>Pyramides</i> / Direction <i>Saint-Lazare</i>
 ```
 curl -s http://localhost:8080/trafic-ratp/metro/14/pyramides/A
