@@ -29,3 +29,8 @@ curl -s http://localhost:8080/trafic-ratp/reseau-ratp/metro/lignes
 ```
 curl -s http://localhost:8080/trafic-ratp/reseau-ratp/metro/stations
 ```
+## Docker
+L'application est également disponible sous la forme d'une image Docker :
+```
+docker run -td -p 8080:8080 ksahnine/ratp-rest-api:1.0
+```
