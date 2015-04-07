@@ -6,7 +6,7 @@
 #
 # DOCKER_VERSION 1.4
 
-FROM dockerfile/java:openjdk-7-jdk
+FROM java:7
 MAINTAINER Kadda SAHNINE <kadda.sahnine@inovia-conseil.fr>
 
 ADD target/trafic-ratp-1.0.0-SNAPSHOT.jar /data/trafic-ratp-1.0.0-SNAPSHOT.jar
