@@ -9,9 +9,9 @@
 FROM java:7
 MAINTAINER Kadda SAHNINE <kadda.sahnine@inovia-conseil.fr>
 
-ADD target/trafic-ratp-1.0.0-SNAPSHOT.jar /data/trafic-ratp-1.0.0-SNAPSHOT.jar
+ADD target/trafic-ratp-1.0.0-SNAPSHOT.jar /app/trafic-ratp-1.0.0-SNAPSHOT.jar
 ADD trafic-ratp.yml /data/trafic-ratp.yml
 
-CMD java -jar trafic-ratp-1.0.0-SNAPSHOT.jar server /data/trafic-ratp.yml
+CMD java -jar /app/trafic-ratp-1.0.0-SNAPSHOT.jar server /data/trafic-ratp.yml
 
 EXPOSE 8080
